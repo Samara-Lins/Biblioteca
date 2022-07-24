@@ -1,19 +1,11 @@
-package Model;
 
-public class Titulo {
-	public String titulo;
-	public String autor;
-	public String genero;
-	public boolean disponivel;
-	public long codigo;
+public class Livro {
+	String titulo;
+	String autor;
+	String genero;
+	boolean disponivel;
 	
-	public Titulo (String titulo, String autor, String genero, boolean disponivel, long codigo) {
-		this.titulo = titulo;
-		this.autor = autor;
-		this.genero = genero;
-		this.disponivel = disponivel;
-		this.codigo = codigo;
-	}
+	Livro () {}
 
 	public String getTitulo() {
 		return titulo;
@@ -46,15 +38,5 @@ public class Titulo {
 	public void setDisponivel(boolean disponivel) {
 		this.disponivel = disponivel;
 	}
-
-	public long getCodigo() {
-		return codigo;
-	}
-
-	public void setCodigo(long codigo) {
-		this.codigo = codigo;
-	}
-	
 	
 }
-
